@@ -1,0 +1,17 @@
+.doc-spec {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9em;
+  color: #13b4b3;
+  font-weight: 600;
+}
+
+.card-tab .ant-tabs-tab{
+  padding: 12px 20px !important;
+}
+
+.card-btn{
+  height: 45px;
+  border-radius: 15px;
+}

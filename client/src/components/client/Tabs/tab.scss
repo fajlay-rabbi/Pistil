@@ -1,0 +1,18 @@
+@import "../../../gobal";
+
+.ant-tabs-tab-active {
+  background: linear-gradient(
+    to top,
+    rgba(19, 180, 179, 0.4),
+    rgba(19, 180, 179, 0.1),
+    rgba(19, 180, 179, 0)
+  ) !important;
+}
+
+.dash-tab .ant-tabs-tab {
+  padding: 13px 40px !important;
+}
+
+.ant-tabs-tab-btn {
+  font-weight: 500;
+}

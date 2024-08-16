@@ -1,0 +1,95 @@
+@import "../../gobal";
+
+.login-wrapper {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.login-sub-wrapper {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login-sub {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.login-options .ant-segmented .ant-segmented-item-selected {
+  background-color: $primary_color_1;
+  color: #fff;
+}
+
+.login-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $dark_color_3;
+  color: $dark_color_1;
+  font-weight: 600;
+  height: 36px;
+  width: 176px;
+}
+
+.active-tab {
+  background-color: $primary_color_1 !important;
+  color: white !important;
+}
+
+.form-below {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forget-pass {
+  p {
+    font-size: small;
+    font-weight: 500;
+    text-decoration: underline;
+    color: $dark_color_2;
+    cursor: pointer;
+  }
+}
+
+.form-btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-btn {
+  height: 50px;
+}
+
+.facebook-btn {
+  background-color: #1877f2 !important;
+}
+
+.new-acc-text {
+  p {
+    color: $dark_color_2;
+    font-size: small;
+  }
+  span {
+    display: inline-block;
+    color: $dark_color_1;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.remember-me{
+  text-align: start;
+  color: $dark_color_2;
+}

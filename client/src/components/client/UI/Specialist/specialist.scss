@@ -1,0 +1,19 @@
+@import "../../../../gobal";
+
+.specialist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 37px;
+    width: 141px;
+    border-radius: 50px;
+    background: rgba(19, 180, 180, 0.08)
+;
+}
+
+.specialist span{
+    display: inline-block;
+    color: $primary_color_1;
+    font-weight: 600;
+}

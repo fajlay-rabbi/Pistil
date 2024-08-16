@@ -1,0 +1,117 @@
+@import "../../gobal";
+
+.medical-history-section{
+   margin-right: 20px;
+
+   @media (max-width: 1440px) {
+    p{
+      font-size: 0.9rem !important;
+    }
+    h2{
+      font-size: 1.4rem;
+    }
+    label{
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 840px) {
+    p{
+      font-size: 0.8rem !important;
+    }
+    h2{
+      font-size: 1.3rem;
+    }
+    label{
+      font-size: 0.8rem;
+    }
+  }
+}
+
+
+.medical-title {
+  p {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+}
+
+.medical-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #e7f7f7;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 40px;
+
+  @media (max-width: 1440px) {
+    padding: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+.divider {
+  height: 35px;
+}
+
+.gender-icon {
+  width: 5px;
+}
+
+.txt-area{
+    padding: 20px;
+    font-weight: 500;
+    color: #073836 !important;
+}
+
+.my-txt{
+    color: #073836 !important;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.txt-bold{
+    font-weight: 600 !important;
+}
+
+.hori-div {
+  display: flex;
+  align-items: center;
+}
+
+.control-input {
+  width: 100%;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $secondary_color_3;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.control-input-icon {
+  width: 16px;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.5ms ease-in-out;
+  box-sizing: content-box;
+
+  &:hover {
+    background-color: #c2f5f5;
+    border-radius: 50px;
+  }
+}
+
+.ant-input{
+    color: #073836 !important;
+}
+
+.right-btn{
+    float: right;
+}
+
+.lg-btn{
+    width: 160px;
+}

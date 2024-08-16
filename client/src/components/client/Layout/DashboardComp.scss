@@ -1,0 +1,32 @@
+.dashboard-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.ant-tabs-tab-active {
+  background: rgb(19, 180, 179) !important;
+  background: -moz-linear-gradient(
+    4deg,
+    rgba(19, 180, 179, 1) 46%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+  background: -webkit-linear-gradient(
+    4deg,
+    rgba(19, 180, 179, 1) 46%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+  background: linear-gradient(
+    4deg,
+    rgba(19, 180, 179, 1) 46%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#13b4b3",endColorstr="#ffffff",GradientType=1) !important;
+}
+
+.dashboard-tab{
+    width: 300px;
+}
+
+.ant-tabs-tab{
+}

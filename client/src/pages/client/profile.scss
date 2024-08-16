@@ -1,0 +1,103 @@
+@import "../../gobal";
+
+.profile-wrapper {
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  @media (max-width: 1440px) {
+    padding: 40px;
+    font-size: 0.9rem;
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.avatar img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 3px;
+  border: 2px solid #13b4b3;
+}
+
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: 1440px) {
+    margin-top: 30px !important;
+  }
+}
+
+.upload-btn {
+  background-color: rgba(19, 180, 180, 0.08);
+  color: $primary_color_1;
+  font-weight: 600;
+  padding: 0px 20px;
+}
+
+.profile-input input {
+  border-radius: 5px;
+}
+
+// .profile-input {
+//   display: flex;
+//   gap: 30px;
+//   flex-wrap: wrap;
+// }
+
+.gender-icon-selector {
+  border-radius: 5px !important;
+}
+
+.gender-icon-selector::before {
+  content: url(../../assets/gender.png);
+  margin-top: 9px !important;
+  margin-right: 10px;
+  display: inline-block !important;
+}
+
+.gender-icon {
+  min-width: 320px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.ant-input-number-group-addon {
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+.ant-input-number {
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.email-label-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-weight: 600;
+  }
+}
+
+// .pass-input-wrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   width: 60%;
+// }
+
+.update-btn {
+  padding: 20px;
+
+   @media (max-width: 767px) {
+    width: 100%;
+  }
+}

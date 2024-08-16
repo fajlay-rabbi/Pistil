@@ -1,0 +1,41 @@
+@import '../../../../gobal';
+
+
+.userSelection-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+    p{
+        color: $dark_color_2;
+        font-size: small;
+    }
+}
+
+.wallet-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.wallet-card{
+    margin-top: 20px;
+}
+
+.wallet-slot1{
+    p{
+        color: $dark_color_2;
+    }
+}
+
+.wallet-slot2{
+    p{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    span{
+        font-weight: 700;
+    }
+}

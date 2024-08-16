@@ -1,0 +1,74 @@
+@import "../../../gobal";
+
+.session-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // max-width: 330px;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 12px;
+
+  @media (max-width: 1440px) {
+    font-size: 0.8rem;
+  }
+}
+
+.card-img {
+  position: relative;
+  img {
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.doc-id {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  background-color: $secondary_color_1;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.card-title {
+  display: flex;
+  gap: 20px;
+  p {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
+
+.spec {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9em;
+  color: #e8900d;
+}
+
+.card-date {
+  display: flex;
+  gap: 5px;
+  color: $dark_color_1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom div p {
+  color: $dark_color_5;
+}
+
+.card-bottom div p:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.1em;
+}

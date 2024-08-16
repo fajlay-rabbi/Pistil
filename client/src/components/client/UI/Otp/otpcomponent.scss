@@ -1,0 +1,24 @@
+.otp-container {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.otp-wrapper {
+  max-width: 352px;
+  margin: 0 auto;
+}
+
+.ant-otp{
+    width: 100%;
+}
+
+.ant-otp-input{
+    border-radius: 5px;
+    height: 48px;
+}

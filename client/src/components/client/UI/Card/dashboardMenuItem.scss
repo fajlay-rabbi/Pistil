@@ -1,0 +1,23 @@
+@import "../../../../gobal";
+
+.dash-menu-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+  max-width: 280px;
+  height: 48px;
+  border-radius: 5px;
+  padding: 0px 20px;
+  cursor: pointer;
+  color: $dark_color_2;
+}
+
+.active_dash_menu {
+    background-color: $dark_color_4 !important;
+  p {
+    font-weight: 600 !important;
+    color: #073836 !important;
+  }
+}
+

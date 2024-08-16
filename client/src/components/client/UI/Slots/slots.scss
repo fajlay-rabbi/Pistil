@@ -1,0 +1,54 @@
+@import "../../../../gobal";
+
+.slot-title {
+  margin-top: 30px;
+  p {
+    font-size: 0.8em;
+    color: $dark_color_2;
+  }
+}
+
+.slotItem-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  background-color: $dark_color_3;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: 1440px) {
+    padding: 15px;
+  }
+}
+
+.slotDate {
+  display: flex;
+  gap: 15px;
+  color: $dark_color_2;
+
+  @media (max-width: 1440px) {
+    font-size: 0.8rem;
+  }
+}
+
+.slotTime {
+  display: flex;
+  gap: 15px;
+
+  p {
+    font-weight: 700;
+  }
+
+  .slotTiming {
+    color: $primary_color_1;
+  }
+
+  @media (max-width: 1440px) {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}

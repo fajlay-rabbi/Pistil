@@ -1,0 +1,36 @@
+.session-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: 1440px) {
+    .ses-col-1{
+      h1{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.ant-tabs-tab-btn {
+  color: #000 !important;
+}
+
+.session-item-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.session-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  height: 100%;
+}
+
