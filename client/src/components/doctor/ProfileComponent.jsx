@@ -1,8 +1,9 @@
-import { Badge, Button, Checkbox, Col, Input, Row, Select } from "antd";
+import { Badge, Button, Checkbox, Col, Input, Radio, Row, Select } from "antd";
 import "./profileComponent.scss";
 import Doctor from "../../assets/av.png";
 import {
   ArrowRightOutlined,
+  ClockCircleOutlined,
   CloseOutlined,
   EnvironmentOutlined,
   UserOutlined,
@@ -125,6 +126,14 @@ const ProfileComponent = () => {
     "In-person",
     "Home visit",
   ];
+
+  const weeks = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  const timeSlots = [
+    "Moring (7Am - 12PM)",
+    "Afternoon (12PM - 06PM)",
+    "Evening (06Pm - 10PM)",
+    "Sun"
+  ]
 
   return (
     <div>
@@ -675,7 +684,7 @@ const ProfileComponent = () => {
             <Col xs={24} md={12} lg={12}>
               <label className="my-txt">
                 Are there are any clients that you prefer not to work with for
-                personal reasons 
+                personal reasons
               </label>
               <Select
                 className="input mt-5 f-width"
@@ -696,7 +705,82 @@ const ProfileComponent = () => {
             </Col>
           </Row>
 
-          
+          <div className="mt-20">
+            <div>
+              <p className="my-txt">Are you currently under supervison?</p>
+              <Radio.Group
+                name="radiogroup"
+                className="mt-5 flex gap-30"
+                defaultValue={1}
+              >
+                <Radio value={1}>Yes</Radio>
+                <Radio value={2}>No</Radio>
+              </Radio.Group>
+            </div>
+          </div>
+
+          <div className="mt-20">
+            <div>
+              <p className="my-txt">
+                Do you currently have any professional Indemnity Insurance?
+              </p>
+              <Radio.Group
+                name="radiogroup"
+                className="mt-5 flex gap-30"
+                defaultValue={1}
+              >
+                <Radio value={1}>Yes</Radio>
+                <Radio value={2}>No</Radio>
+              </Radio.Group>
+            </div>
+          </div>
+
+          <div className="mt-20">
+            <label className="my-txt">
+              Approximate availability (hours per week)
+            </label>
+            <Input
+              className="input mt-10"
+              size="large"
+              value={"40 hour"}
+              prefix={<ClockCircleOutlined className="icon" />}
+              type="text"
+            />
+          </div>
+
+          <div className="mt-20">
+            <p className="my-txt">
+              Which days & timeslots are you likely to be available?
+            </p>
+            <p className="txt-color mt-20">Days</p>
+            <div className="mt-10">
+              {weeks.map((item, index) => {
+                return (
+                  <Checkbox key={index} className="mbtl-10">
+                    <p className="txt-bold-green">{item}</p>
+                  </Checkbox>
+                );
+              })}
+            </div>
+            <p className="txt-color mt-20">Timeslots</p>
+            <div className="mt-10">
+              {timeSlots.map((item, index) => {
+                return (
+                  <Checkbox key={index} className="mbtl-10">
+                    <p className="txt-bold-green">{item}</p>
+                  </Checkbox>
+                );
+              })}
+            </div>
+            <Button
+              className="update-btn mt-30 btn-left"
+              type="primary"
+              icon={<ArrowRightOutlined />}
+              iconPosition="end"
+            >
+              Update
+            </Button>
+          </div>
         </div>
       </div>
     </div>

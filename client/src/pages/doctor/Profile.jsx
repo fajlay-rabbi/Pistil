@@ -1,6 +1,8 @@
 import { Tabs } from "antd";
 import "./profile.scss";
 import ProfileComponent from "../../components/doctor/ProfileComponent";
+import ContactComponent from "../../components/doctor/ContactComponent";
+import PreferencesComponent from "../../components/doctor/PreferencesComponent";
 
 const Profile = () => {
   const items = [
@@ -12,12 +14,12 @@ const Profile = () => {
     {
       key: "2",
       label: "Contact details",
-      // children: <div>Passing Content</div>,
+      children: <ContactComponent />,
     },
     {
       key: "3",
       label: "Preferences",
-      // children: <div>Passing Content</div>,
+      children: <PreferencesComponent />,
     },
   ];
   return (
