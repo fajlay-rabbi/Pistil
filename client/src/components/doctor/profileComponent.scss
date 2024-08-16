@@ -30,6 +30,46 @@
   border-radius: 5px;
 }
 
-.lang-icon {
+.lang-icons {
   cursor: pointer;
+}
+
+.lang-icon-selector {
+  border-radius: 5px !important;
+}
+
+.lang-icon-selector::before {
+  content: url(../../assets/icons/globe.png);
+  margin-top: 9px !important;
+  margin-right: 10px;
+  display: inline-block !important;
+}
+
+.lang-icon {
+  min-width: 320px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.txt-md {
+  font-size: 1rem !important;
+}
+
+.country .ant-select-selector {
+  border-radius: 5px !important;
+}
+
+.btn-left {
+  float: right !important;
+}
+
+.mbtl-10 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.select-radius-selector {
+  border-radius: 5px !important;
 }
